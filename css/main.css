@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: linear-gradient(80deg, rgb(69, 132, 227) 0 50%, rgb(179, 130, 219) 50%);
+    text-align: center;
+}
+
+H1 {
+    margin-top: 20PX;
+    font-style: italic;
+    font-size: 70PX;
+    margin-bottom: 40px;
+}
+
+span {
+    color: rgb(252, 0, 0);
+    font-size: 100px;
+}
+
+.ques img {
+    height: 320px;
+    width: 320px;
+    border-radius: 20px;
+}
+
+.answer {
+    height: 40px;
+    width: 400px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 40px;
+    font-family: sans-serif;
+    color: rgba(29, 32, 30, 0.659);
+    background-color: aliceblue;
+    border: 3px solid black;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.answer.answer0,
+.answer.answer1 {
+    margin: auto;
+    margin-top: 20px;
+}
+
+#wrong {
+    animation: wrong 4s 1;
+    -webkit-animation: wrong 4s 1;
+}
+
+@-webkit-keyframes wrong
+
+/* Safari and Chrome */
+    {
+    0% {
+        background: white;
+    }
+
+    25% {
+        background: red;
+    }
+
+    75% {
+        background: white;
+    }
+
+    100% {
+        background: red;
+    }
+}
+
+#correct {
+    animation: correct 4s 1;
+    -webkit-animation: correct 4s 1;
+}
+
+@-webkit-keyframes correct
+
+/* Safari and Chrome */
+    {
+    0% {
+        background: white;
+    }
+
+    25% {
+        background: green;
+    }
+
+    75% {
+        background: white;
+    }
+
+    100% {
+        background: green;
+    }
+}
+
+.bob {
+    margin-top: 49px;
+}
+
+.modal {
+    height: 600px;
+    width: 800px;
+    background-image: linear-gradient(#005AA7, #FFFDE4);
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.x {
+    float: right;
+    margin-right: 40PX;
+    font-size: 20px;
+    background-color: inherit;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 100px;
+    margin-top: 40px;
+    padding-bottom: 80px;
+    padding-top: 100px;
+}
+
+.play {
+    left: 50%;
+    top: 50%;
+    height: 100px;
+    width: 300px;
+    background-color: whitesmoke;
+    font-size: 30px;
+    border-radius: 30px;
+    border: 1px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
